@@ -1,0 +1,122 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Pyro",
+	"scopeName": "source.pyro",
+	"patterns": [
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#numbers"
+		},
+		{
+			"include": "#double-quoted-strings"
+		},
+		{
+			"include": "#backticked-strings"
+		},
+		{
+			"include": "#characters"
+		}
+	],
+	"repository": {
+		"comments": {
+			"name": "comment",
+			"begin": "#",
+			"end": "\n"
+		},
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.pyro",
+				"match": "\\b(var|def|typedef|class|with|pub|pri|static|if|else|for|while|in|loop|for|return|break|continue|try|echo|assert|import|as|true|false|null|self|super)\\b"
+			}]
+		},
+		"numbers": {
+			"patterns": [
+				{
+					"name": "constant.numeric.pyro",
+					"match": "\\b\\d(\\d|_)*\\.(\\d|_)+(e[+-]?(\\d|_)+)?\\b"
+				},
+				{
+					"name": "constant.numeric.pyro",
+					"match": "\\b\\d(\\d|_)*e[+-]?(\\d|_)+\\b"
+				},
+				{
+					"name": "constant.numeric.pyro",
+					"match": "\\b\\d(\\d|_)*\\b"
+				},
+				{
+					"name": "constant.numeric.pyro",
+					"match": "\\b0x([0-9a-fA-F]|_)+\\b"
+				},
+				{
+					"name": "constant.numeric.pyro",
+					"match": "\\b0o([0-7]|_)+\\b"
+				},
+				{
+					"name": "constant.numeric.pyro",
+					"match": "\\b0b([01]|_)+\\b"
+				}
+			]
+		},
+		"double-quoted-strings": {
+			"name": "string.quoted.double.pyro",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.pyro",
+					"match": "\\\\x[0-9a-fA-F]{2}"
+				},
+				{
+					"name": "constant.character.escape.pyro",
+					"match": "\\\\u[0-9a-fA-F]{4}"
+				},
+				{
+					"name": "constant.character.escape.pyro",
+					"match": "\\\\U[0-9a-fA-F]{8}"
+				},
+				{
+					"name": "constant.character.escape.pyro",
+					"match": "\\\\."
+				},
+				{
+					"name": "constant.character.escape.pyro",
+					"begin": "\\$\\{",
+					"end": "\\}"
+				}
+			]
+		},
+		"backticked-strings": {
+			"name": "string.quoted.backtick.pyro",
+			"begin": "`",
+			"end": "`"
+		},
+		"characters": {
+			"name": "string.quoted.single.pyro",
+			"begin": "'",
+			"end": "'",
+			"patterns": [
+				{
+					"name": "constant.character.escape.pyro",
+					"match": "\\\\x[0-9a-fA-F]{2}"
+				},
+				{
+					"name": "constant.character.escape.pyro",
+					"match": "\\\\u[0-9a-fA-F]{4}"
+				},
+				{
+					"name": "constant.character.escape.pyro",
+					"match": "\\\\U[0-9a-fA-F]{8}"
+				},
+				{
+					"name": "constant.character.escape.pyro",
+					"match": "\\\\."
+				}
+			]
+		}
+	}
+}

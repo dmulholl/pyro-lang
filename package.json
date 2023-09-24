@@ -1,0 +1,25 @@
+{
+  "name": "pyro-lang",
+  "displayName": "Pyro Lang",
+  "description": "Syntax highlighting for Pyro",
+  "version": "0.1.0",
+  "engines": {
+    "vscode": "^1.82.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "pyro",
+      "aliases": ["Pyro", "pyro"],
+      "extensions": ["pyro"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "pyro",
+      "scopeName": "source.pyro",
+      "path": "./syntaxes/pyro.tmLanguage.json"
+    }]
+  }
+}
