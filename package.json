@@ -3,6 +3,12 @@
   "displayName": "Pyro Lang",
   "description": "Syntax highlighting for Pyro",
   "version": "0.1.0",
+  "license": "0BSD",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dmulholl/pyro-lang.git"
+  },
+  "homepage": "https://github.com/dmulholl/pyro-lang",
   "engines": {
     "vscode": "^1.82.0"
   },
@@ -10,16 +16,25 @@
     "Programming Languages"
   ],
   "contributes": {
-    "languages": [{
-      "id": "pyro",
-      "aliases": ["Pyro", "pyro"],
-      "extensions": ["pyro"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "pyro",
-      "scopeName": "source.pyro",
-      "path": "./syntaxes/pyro.tmLanguage.json"
-    }]
+    "languages": [
+      {
+        "id": "pyro",
+        "aliases": [
+          "Pyro",
+          "pyro"
+        ],
+        "extensions": [
+          "pyro"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "pyro",
+        "scopeName": "source.pyro",
+        "path": "./syntaxes/pyro.tmLanguage.json"
+      }
+    ]
   }
 }
