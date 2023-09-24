@@ -3,6 +3,7 @@
   "displayName": "Pyro Lang",
   "description": "Syntax highlighting for Pyro",
   "version": "0.1.0",
+  "publisher": "dmulholl",
   "license": "0BSD",
   "repository": {
     "type": "git",
