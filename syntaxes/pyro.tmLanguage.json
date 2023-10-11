@@ -31,7 +31,7 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.pyro",
-				"match": "\\b(var|def|typedef|class|with|pub|pri|static|if|else|for|while|in|loop|for|return|break|continue|try|echo|assert|import|as|true|false|null|self|super)\\b"
+				"match": "\\b(var|let|def|typedef|class|with|pub|pri|static|if|else|for|while|in|loop|for|return|break|continue|try|echo|assert|import|as|true|false|null|self|super)\\b"
 			}]
 		},
 		"numbers": {
