@@ -1,3 +1,6 @@
+help:
+	@cat ./makefile
+
 package:
 	vsce package
 
