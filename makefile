@@ -6,3 +6,6 @@ package:
 
 publish:
 	vsce publish
+
+login:
+	vsce login dmulholl
