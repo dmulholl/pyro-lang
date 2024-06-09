@@ -7,6 +7,9 @@
 			"include": "#comments"
 		},
 		{
+			"include": "#dollar-identifiers"
+		},
+		{
 			"include": "#keywords"
 		},
 		{
@@ -30,6 +33,12 @@
 			"name": "comment",
 			"begin": "#",
 			"end": "\n"
+		},
+		"dollar-identifiers": {
+			"patterns": [{
+				"name": "keyword.other.pyro",
+				"match": "[$]\\w+\\b"
+			}]
 		},
 		"keywords": {
 			"patterns": [{
