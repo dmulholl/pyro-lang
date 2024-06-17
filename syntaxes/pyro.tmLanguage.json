@@ -36,7 +36,7 @@
 		},
 		"dollar-identifiers": {
 			"patterns": [{
-				"name": "keyword.other.pyro",
+				"name": "entity.name.function.pyro",
 				"match": "[$]\\w+\\b"
 			}]
 		},
