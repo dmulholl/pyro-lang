@@ -2,7 +2,7 @@
   "name": "pyro-lang",
   "displayName": "Pyro Lang",
   "description": "Syntax highlighting for the Pyro programming language",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "publisher": "dmulholl",
   "license": "0BSD",
   "repository": {
@@ -27,6 +27,7 @@
         "extensions": [
           "pyro"
         ],
+        "firstLine": "^#!\\s*/.*\\bpyro\\b",
         "configuration": "./language-configuration.json"
       }
     ],
